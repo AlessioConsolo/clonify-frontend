@@ -8,7 +8,7 @@ const authApi = axios.create({
 });
 
 // Funzione per il login
-export const login = async (email, password) => {
+export const loginUser = async (email, password) => {
   try {
     const response = await authApi.post("/login", { email, password });
     localStorage.setItem("token", response.data.token); // Salva il token

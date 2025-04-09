@@ -11,12 +11,12 @@ const routes = [
     component: HomeView,
   },
   {
-    path: "/playlist/:id",
+    path: "/playlist",
     name: "playlist",
     component: PlaylistView,
   },
   {
-    path: "/song/:id",
+    path: "/song",
     name: "song",
     component: SongView,
   },
